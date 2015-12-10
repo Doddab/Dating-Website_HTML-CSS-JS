@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> Dating Website </title>
+	<meta name=“Harshith” content=“Personal information of a registrant”>
+</head>
+
+<body>
+	<h2>Please Enter Your Details For Our Dating Website!</h2>
+	<form action=“https://ihome.ust.hk/~rossiter/cgi-bin/show_everything.php” method=“post” enctype=“multipart/form-data”>
+	<fieldset>
+		<legend> Your face </legend>
+		<label for=avatar>Your image:</label>
+		<input type=file id=avatar name=“avatar” required><br>
+		<label for=preview>Image preview:
+		<img id=preview></label>
+	</fieldset>
+	<fieldset>
+		<legend> Your general details </legend>
+		<label for=name>Name:</label>
+		<input type=text id=name name=“enter name” required><br>
+		<label for=sex class=radio>Gender:</label>
+			<input type=radio id=sex name="sex" value=“Male" required> Male
+			<input type=radio id=sex name="sex" value=“Female” required>Female <br>
+		<label for=age>Age:</label>
+		<input type=number id=age name=“enter age” required><br>
+		<label for=dob>Date of birth:</label>
+		<input type=date id=dob name=“enter date of birth”><br>
+		<label for=color>Favorite color:</label>
+		<input type=color id=color name=“enter favorite color”><br>
+		<label for=country>Which country:</label>
+		<select id=country name=“countrylist”>
+			<option value=“no selection”>No Selection</option>
+			<option value=“uk”>UK</option>
+			<option value=“australia”>Australia</option>
+  			<option value=“india”>India</option>
+		        <option value=“usa”>USA</option>
+		        <option value=“germany”>Germany</option>
+		</select>
+	</fieldset>
+	<fieldset>
+		<legend> Your indicators </legend>
+		<label for=height class=range>Height:</label>
+		<span class=highlight>Short</span>
+		<input type=range min=“0” max=“100” id=height name=“height variations” value="0" step="10"><span class=highlight2>Tall</span><br>
+
+		<label for=salary class=range>Salary:</label>
+		<span class=highlight>Poor</span>
+		<input type=range min=“0” max=“100” id=salary name=“salary range” value="0" step="10"><span class=highlight2>Rich</span>
+	</fieldset>
+	<fieldset>
+		<legend> Your Contact Information </legend>
+		<label for=mail>Email:</label>
+		<input type=email id=mail name=“enter email” required><br>
+		<label for=contact number>Mobile:</label>
+		<input type=tel id=contact number name=“enter mobile number”><br>
+		<label for=address class=checkbox>Address:</label>
+		<textarea rows="4" cols="50" id=address></textarea><br>
+		<label for=contactmethod class=checkboxx>Method to contact you:</label>
+		<input type="checkbox" id=contactmethod name=“contactmethod” value=“mail”> Email
+  		<input type="checkbox" id= contactmethod name="contactmethod" value=“messenger”> Whatsapp
+		<input type="checkbox" id=contactmethod name="contactmethod" value=“chatting method”> In-app chat<br>
+	</fieldset>
+	 <input type="submit" value="Submit">
+	</form>
+
+</body>
+
+
+
